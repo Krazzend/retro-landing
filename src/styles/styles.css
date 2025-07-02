@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Press Start 2P', monospace;
+    background-color: #111;
+    color: #f2f2f2;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado */
+Header {
+    background-color: #292929;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+#ranking {
+    margin-top: 40px;
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-left: 5px solid #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+#ranking h2 {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#ranking ol {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#ranking li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #fff;
+}
+
+#ranking li::before {
+content: "👾";
+position: absolute;
+left: 0;
+top: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    body {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+}
