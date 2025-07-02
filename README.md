@@ -31,14 +31,17 @@ Una landing page con estética retro ochentosa, construida con HTML5 + CSS3. Ins
 ## 📁 Estructura de carpetas
 
 ```
-retro-landing/
-├── index.html
-├── src/
-│   ├── styles/
-│   │   └── styles.css
-│   ├── img/
-│   │   └── favicon.png
-│   └── README.md
+C:.
+│   .gitignore
+│   index.html
+│   README.md
+│
+└───src
+    ├───img
+    │       favicon.png
+    │
+    └───styles
+            styles.css
 ```
 
 ---
